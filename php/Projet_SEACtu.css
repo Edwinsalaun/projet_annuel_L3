@@ -1,0 +1,83 @@
+/* Réinitialisation des styles de base */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('URL_DE_VOTRE_IMAGE_DE_FOND');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container {
+    max-width: 1700px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #fff; /* Texte "Actualités" en blanc */
+}
+
+.navbar {
+    background-color: #000; /* Barre de tâche en noir */
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar nav ul li a {
+    color: #fff; /* Couleur des liens en blanc */
+    text-decoration: none;
+	  padding: 10px 20px; /* Espacement intérieur */
+ 
+}
+
+.news {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 100px;
+}
+
+.news-item {
+    background-color: #f9f9f9;
+    padding: 80px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.news-item img {
+    width: 70%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.news-item h2 {
+    margin-top: 10px;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.news-item p {
+    margin-top: 30px;
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Styles pour le lien "Accueil" dans la barre de navigation */
+.navbar nav ul li a[href*="Accueil"] {
+    color: #fff; /* Couleur du texte en blanc */
+    background-color: #333; /* Couleur de fond */
+    padding: 10px 20px; /* Espacement intérieur */
+    border-radius: 5px; /* Bordure arrondie */
+    text-decoration: none; /* Suppression du soulignement */
+    transition: background-color 0.3s, color 0.3s; /* Transition fluide */
+}
+
+/* Styles au survol du lien "Accueil" */
+.navbar nav ul li a[href*="Accueil"]:hover {
+    background-color: #666; /* Couleur de fond au survol */
+    color: #fff; /* Couleur du texte au survol */
+}
+

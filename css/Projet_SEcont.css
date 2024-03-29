@@ -1,0 +1,82 @@
+/* Réinitialisation des styles de base */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('URL_DE_VOTRE_IMAGE_DE_FOND');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #fff; /* Titre en blanc */
+}
+
+.navbar {
+    background-color: #000; /* Barre de navigation en noir */
+    color: #fff;
+    padding: 10px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar nav ul li {
+    margin-right: 20px;
+}
+
+.navbar nav ul li a {
+    color: #fff; /* Couleur des liens en blanc */
+    text-decoration: none;
+}
+
+.navbar nav ul li a:hover {
+    color: #ccc; /* Couleur des liens au survol */
+}
+
+.contact-info {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.contact-info a {
+    display: inline-block;
+    margin: 10px;
+    color: #333;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.contact-info a:hover {
+    color: #666;
+}
+
+/* Ajout d'icônes pour les réseaux sociaux */
+.contact-info a i {
+    margin-right: 5px; /* Espace entre l'icône et le texte du lien */
+    color: #3b5998; /* Couleur de l'icône Facebook */
+}
+
+.contact-info a i.fa-twitter {
+    color: #1da1f2; /* Couleur de l'icône Twitter */
+}
+
+.contact-info a i.fa-instagram {
+    color: #c13584; /* Couleur de l'icône Instagram */
+}
+
+
