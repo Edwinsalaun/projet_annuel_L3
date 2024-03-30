@@ -59,7 +59,7 @@ p {
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="C:\Users\Edwin\Documents\projet annuel\css\Projet_SE1.css">
+  <link rel="stylesheet" href="css\Projet_SE1.css">
   <title>User Dashboard</title>
 </head>
 <body>
@@ -77,7 +77,7 @@ p {
         <a href="Projet_SE3.php">
           <button id="proSubscription">Pro abonnement</button>
         </a>
-        <a href="C:\Users\Edwin\Documents\projet annuel\css\Projet_SE2.php">
+        <a href="css\Projet_SE2.php">
           <button id="classicSubscription">Classic abonnement</button>
         </a>
       </div>

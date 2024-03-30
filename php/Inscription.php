@@ -10,7 +10,7 @@ if(isset($_POST['nom']) && isset($_POST['prenom']) && isset($_POST['ADRESSE_EMAI
     $sport_pratique = $_POST['sport']; // Remplacer par l'id du sport sélectionné
     $Taille = $_POST['Taille'];
     $Poids = $_POST['Poids'];
-    $abonnement = $_POST['abonnement']; // Remplacer par l'id de l'abonnement sélectionné
+    $abonnement = $_POST['abonnement']; // Remplacer par l'id de l'abonnement sélectionné 
     $ADRESSE_EMAIL = $_POST['ADRESSE_EMAIL'];
     $MOT_DE_PASSE = password_hash($_POST['MOT_DE_PASSE'], PASSWORD_DEFAULT); // Hachage du mot de passe
     $role = 'utilisateur';

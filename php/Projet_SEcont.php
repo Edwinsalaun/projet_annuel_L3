@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
-    <link rel="stylesheet" href="C:\Users\Edwin\Documents\projet annuel\css\Projet_SEcont.css">
+    <link rel="stylesheet" href="css\Projet_SEcont.css">
     
     <!-- des icones  -->  
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -17,7 +17,7 @@
             <h2>Contact</h2>
             <nav>
                 <ul>
-                    <li><a href="C:\Users\Edwin\Documents\projet annuel\css\P_Acceuil.php">Accueil</a></li>
+                    <li><a href="css\P_Acceuil.php">Accueil</a></li>
                     <!-- Ajoutez d'autres liens de navigation si necessaire -->
                 </ul>
             </nav>

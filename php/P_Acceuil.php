@@ -87,7 +87,7 @@ h2 {
 }
 
 
-body {body, html {
+body , html {
   margin: 0;
   padding: 0;
   height: 100%;
@@ -121,7 +121,7 @@ body {body, html {
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="C:\Users\Edwin\Documents\projet annuel\css\projet_SEAC.css">
+  <link rel="stylesheet" href="css\projet_SEAC.css">
   <title>Page d'accueil</title>
 </head>
 <body>
@@ -140,9 +140,9 @@ body {body, html {
     <nav>
       <ul>
         <li><a href="#">Accueil</a></li>
-        <li><a href="C:\Users\Edwin\Documents\projet annuel\css\Projet_SE.php">Mon Compte </a></li>
-		<li><a href="C:\Users\Edwin\Documents\projet annuel\css\Projet_SEACTU.php">Actualites </a></li>
-        <li><a href="C:\Users\Edwin\Documents\projet annuel\css\Projet_SEcont.php">Contact</a></li>
+        <li><a href="css\Projet_SE.php">Mon Compte </a></li>
+		<li><a href="css\Projet_SEACTU.php">Actualites </a></li>
+        <li><a href="css\Projet_SEcont.php">Contact</a></li>
       </ul>
     </nav>    
   </header>

@@ -36,11 +36,11 @@ if(isset($_POST['NOM_UTILISATEUR']) && isset($_POST['MOT_DE_PASSE'])) {
             }
         } else {
             // Mot de passe incorrect
-            echo "Mot de passe incorrect";
+            echo "identifiant ou Mot de passe incorrect";
         }
     } else {
         // Utilisateur non trouve
-        echo "Utilisateur non trouve";
+        echo "identifiant ou Mot de passe incorrect";
     }
 } else {
     // Les champs du formulaire ne sont pas tous remplis
