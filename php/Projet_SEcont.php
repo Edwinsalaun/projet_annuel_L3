@@ -17,7 +17,7 @@
             <h2>Contact</h2>
             <nav>
                 <ul>
-                    <li><a href="css\P_Acceuil.php">Accueil</a></li>
+                    <li><a href="php\P_Acceuil.php">Accueil</a></li>
                     <!-- Ajoutez d'autres liens de navigation si necessaire -->
                 </ul>
             </nav>

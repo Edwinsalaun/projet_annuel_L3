@@ -140,9 +140,9 @@ body , html {
     <nav>
       <ul>
         <li><a href="#">Accueil</a></li>
-        <li><a href="css\Projet_SE.php">Mon Compte </a></li>
-		<li><a href="css\Projet_SEACTU.php">Actualites </a></li>
-        <li><a href="css\Projet_SEcont.php">Contact</a></li>
+        <li><a href="php\Projet_SE.php">Mon Compte </a></li>
+		<li><a href="php\Projet_SEACTU.php">Actualites </a></li>
+        <li><a href="php\Projet_SEcont.php">Contact</a></li>
       </ul>
     </nav>    
   </header>

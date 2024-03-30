@@ -77,7 +77,7 @@ p {
         <a href="Projet_SE3.php">
           <button id="proSubscription">Pro abonnement</button>
         </a>
-        <a href="css\Projet_SE2.php">
+        <a href="php\Projet_SE2.php">
           <button id="classicSubscription">Classic abonnement</button>
         </a>
       </div>
