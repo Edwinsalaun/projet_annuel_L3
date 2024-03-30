@@ -14,33 +14,19 @@ if(isset($_POST['NOM_UTILISATEUR']) && isset($_POST['MOT_DE_PASSE'])) {
 
     if ($result->num_rows === 1) { // Verification si un utilisateur correspondant a ete trouve
         $row = $result->fetch_assoc();
-        
-        // Recuperation des roles
-        $id_user = $row['Id_U'];
 
-        $sqlRoles = "SELECT `role_id` FROM `user_roles` WHERE user_id = ?";
-        $stmtRoles = $connexion->prepare($sqlRoles);
-        $stmtRoles->bind_param("i", $id_user);
-        $stmtRoles->execute();
-        $resultatQueryRoles = $stmtRoles->get_result();
-
-        $roles = array();
-        while ($rowRole = $resultatQueryRoles->fetch_assoc()) {
-            $roles[] = $rowRole['role_id']; // Utilisation de la colonne correcte
-        }
-
-        $user = new Users($row['Id_U'], $row['nom'], $row['prenom'], $row['Taille'], $row['Poids'], $row['abonnement'], $row['sport_pratique'], $row['genre'], $row['email'], $row['Mot_de_passe'], $row['photo'], $roles, $row['banni']);
+        $user = new Users($row['Id_U'], $row['nom'], $row['prenom'], $row['Taille'], $row['Poids'], $row['abonnement'], $row['sport_pratique'], $row['genre'], $row['email'], $row['Mot_de_passe'], $row['photo'], $row['role'], $row['banni']);
         
         // Verification du mot de passe
         if (password_verify($mdp, $user->Mot_de_passe)) {
 
-            // Verification des roles
-            if (in_array(2, $user->Roles)) {
+            // Verification des role
+            if ($user->Role == 'administrateur') {
                 // Redirection vers la page d'administration si les identifiants sont valides
                 $_SESSION['role'] = 'administrateur'; // Enregistrement du role dans la session
                 header("Location: Adminstra.php");
                 exit();
-            } elseif (in_array(1, $user->Roles)) {
+            } elseif ($user->Role == 'utilisateur') {
                 // Redirection vers la page d'accueil en tant qu'utilisateur standard
                 $_SESSION['role'] = 'utilisateur'; // Enregistrement du role dans la session
                 header("Location: P_Acceuil.php");

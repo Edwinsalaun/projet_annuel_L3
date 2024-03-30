@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3306
--- Généré le : sam. 30 mars 2024 à 14:34
+-- Généré le : sam. 30 mars 2024 à 15:07
 -- Version du serveur : 5.7.42
 -- Version de PHP : 8.2.13
 
@@ -102,27 +102,6 @@ INSERT INTO `plan_entrainement` (`ID_Plan`, `Nom_plan`, `activité`, `Descriptio
 -- --------------------------------------------------------
 
 --
--- Structure de la table `role`
---
-
-DROP TABLE IF EXISTS `role`;
-CREATE TABLE IF NOT EXISTS `role` (
-  `id_role` int(11) NOT NULL AUTO_INCREMENT,
-  `Titre` varchar(20) NOT NULL,
-  PRIMARY KEY (`id_role`)
-) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
-
---
--- Déchargement des données de la table `role`
---
-
-INSERT INTO `role` (`id_role`, `Titre`) VALUES
-(1, 'Utilisateur'),
-(2, 'Administrateur');
-
--- --------------------------------------------------------
-
---
 -- Structure de la table `users`
 --
 
@@ -131,6 +110,7 @@ CREATE TABLE IF NOT EXISTS `users` (
   `Id_U` int(11) NOT NULL AUTO_INCREMENT,
   `email` varchar(100) COLLATE latin1_general_ci NOT NULL,
   `Mot_de_passe` varchar(100) COLLATE latin1_general_ci NOT NULL,
+  `Role` varchar(20) COLLATE latin1_general_ci NOT NULL,
   `nom` varchar(100) COLLATE latin1_general_ci NOT NULL,
   `prenom` varchar(100) COLLATE latin1_general_ci NOT NULL,
   `abonnement` int(11) NOT NULL,
@@ -154,20 +134,6 @@ DELIMITER $$
 CREATE TRIGGER `user_roles_creation` AFTER INSERT ON `users` FOR EACH ROW INSERT INTO user_roles (user_id, role_id) VALUES (NEW.Id_U, 1)
 $$
 DELIMITER ;
-
--- --------------------------------------------------------
-
---
--- Structure de la table `user_roles`
---
-
-DROP TABLE IF EXISTS `user_roles`;
-CREATE TABLE IF NOT EXISTS `user_roles` (
-  `user_id` int(11) DEFAULT NULL,
-  `role_id` int(11) DEFAULT NULL,
-  KEY `user_id` (`user_id`),
-  KEY `role_id` (`role_id`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 --
 -- Contraintes pour les tables déchargées

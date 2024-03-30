@@ -4,6 +4,7 @@ class Users {
     private $Id_U;
     private $nom;
     private $prenom;
+    private $Role;
     private $Taille;
     private $Poids;
     private $abonnement;
@@ -12,11 +13,10 @@ class Users {
     private $email;
     private $Mot_de_passe;
     private $photo;
-    private $Roles = array();
     private $banni;
 
     // Constructeur
-    public function __construct(int $Id_U, string $nom, string $prenom, int $Taille, float $Poids, string $abonnement, string $sport_pratique, string $genre, string $email, string $Mot_de_passe, string $photo, array $Roles, int $banni) {
+    public function __construct(int $Id_U, string $nom, string $prenom, int $Taille, float $Poids, string $abonnement, string $sport_pratique, string $genre, string $email, string $Mot_de_passe, string $photo, string $Role, int $banni) {
         $this->Id_U = $Id_U;
         $this->nom = $nom;
         $this->prenom = $prenom;
@@ -28,7 +28,7 @@ class Users {
         $this->email = $email;
         $this->Mot_de_passe = $Mot_de_passe;
         $this->photo = $photo;
-        $this->Roles = $Roles;
+        $this->Role = $Role;
         $this->banni = $banni;
     }
 
@@ -78,8 +78,8 @@ class Users {
         return $this->photo;
     }
 
-    public function getRoles(): array {
-        return $this->Roles;
+    public function getRole(): string {
+        return $this->Role;
     }
 
     public function getBanni(): int {
@@ -128,8 +128,8 @@ class Users {
         $this->photo = $photo;
     }
 
-    public function setRoles(array $Roles): void {
-        $this->Roles = $Roles;
+    public function setRole(string $Role): void {
+        $this->Role = $Role;
     }
 
     public function setBanni(int $banni): void {
