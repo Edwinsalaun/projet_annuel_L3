@@ -1,5 +1,5 @@
 <?php
-include "connexion.php";
+include "connexion_bdd.php";
 session_start();
 
 if(isset($_POST['NOM_UTILISATEUR']) && isset($_POST['MOT_DE_PASSE'])) {

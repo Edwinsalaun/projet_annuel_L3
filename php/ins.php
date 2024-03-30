@@ -1,7 +1,7 @@
 <?php
 echo "ertyuiuyty";
 
-include "connexion.php";
+include "connexion_bdd.php";
 session_start();
 if(isset($_POST['nom']) && isset($_POST['prenom'])) {
     $nom = $_POST['nom'];

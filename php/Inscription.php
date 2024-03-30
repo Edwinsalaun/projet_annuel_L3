@@ -1,6 +1,6 @@
 <?php
 
-include "connexion.php";
+include "connexion_bdd.php";
 session_start();
 
 if(isset($_POST['nom']) && isset($_POST['prenom']) && isset($_POST['ADRESSE_EMAIL']) && isset($_POST['MOT_DE_PASSE']) && isset($_POST['abonnement']) && isset($_POST['sport'])) {

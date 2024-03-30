@@ -8,7 +8,7 @@ if (!isset($_SESSION['id_utilisateur'])) {
 }
 
 // Connexion a la base de donnees
-include "connexion.php";
+include "connexion_bdd.php";
 
 if ($connexion->connect_error) {
     die("echec de la connexion a la base de donnees : " . $connexion->connect_error);
