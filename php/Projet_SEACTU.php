@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Actualites de la salle de sport</title>
-    <link rel="stylesheet" href="css\Projet_SEACtu.css">
+    <link rel="stylesheet" href="Projet_SEACtu.css">
 </head>
 <body>
     <div class="container">
@@ -13,7 +13,7 @@
             <h2>Actualites</h2>
             <nav>
                 <ul>
-                    <li><a href="php\P_Acceuil.php">Accueil</a></li>
+                    <li><a href="P_Acceuil.php">Accueil</a></li>
                     <!-- Ajoutez d'autres liens de navigation si necessaire -->
                 </ul>
             </nav>

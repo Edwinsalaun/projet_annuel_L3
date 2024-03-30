@@ -59,7 +59,7 @@ button {
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css\Projet_SE.css">
+  <link rel="stylesheet" href="Projet_SE.css">
   <title>Accueil</title>
 </head>
 <body>
@@ -86,7 +86,7 @@ button {
 
         <button type="submit">CONNEXION</button>
       </form>
-      <p>Pas encore de compte ? <a href="php\Projet_SE1.php">Creer un compte</a></p>
+      <p>Pas encore de compte ? <a href="Projet_SE1.php">Creer un compte</a></p>
     </div>
   </section>
 

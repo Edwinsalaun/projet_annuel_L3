@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Page d'administration</title>
-	  <link rel="stylesheet" href="css\Administra.css">
+	  <link rel="stylesheet" href="Administra.css">
 </head>
 <body>
     <h1>Page d'administration</h1>

@@ -121,7 +121,7 @@ body , html {
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css\projet_SEAC.css">
+  <link rel="stylesheet" href="projet_SEAC.css">
   <title>Page d'accueil</title>
 </head>
 <body>
@@ -140,9 +140,9 @@ body , html {
     <nav>
       <ul>
         <li><a href="#">Accueil</a></li>
-        <li><a href="php\Projet_SE.php">Mon Compte </a></li>
-		<li><a href="php\Projet_SEACTU.php">Actualites </a></li>
-        <li><a href="php\Projet_SEcont.php">Contact</a></li>
+        <li><a href="Projet_SE.php">Mon Compte </a></li>
+		<li><a href="Projet_SEACTU.php">Actualites </a></li>
+        <li><a href="Projet_SEcont.php">Contact</a></li>
       </ul>
     </nav>    
   </header>
