@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3306
--- Généré le : sam. 30 mars 2024 à 15:07
+-- Généré le : sam. 30 mars 2024 à 15:18
 -- Version du serveur : 5.7.42
 -- Version de PHP : 8.2.13
 
@@ -125,15 +125,6 @@ CREATE TABLE IF NOT EXISTS `users` (
   KEY `abonnement` (`abonnement`),
   KEY `sport_pratique` (`sport_pratique`)
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
-
---
--- Déclencheurs `users`
---
-DROP TRIGGER IF EXISTS `user_roles_creation`;
-DELIMITER $$
-CREATE TRIGGER `user_roles_creation` AFTER INSERT ON `users` FOR EACH ROW INSERT INTO user_roles (user_id, role_id) VALUES (NEW.Id_U, 1)
-$$
-DELIMITER ;
 
 --
 -- Contraintes pour les tables déchargées
