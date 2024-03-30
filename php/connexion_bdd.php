@@ -4,9 +4,7 @@ $username='esalau01';
 $password='22302676';
 try{
     $pdo=new PDO($dbname,$username,$password);
-    echo("vous etes connecte ");
 }
 catch(exception $e){
     die('erreur:'.$e->getmessage());
 }
-?>

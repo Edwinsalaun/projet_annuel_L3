@@ -6,7 +6,7 @@
     <title>Contact</title>
     <link rel="stylesheet" href="C:\Users\Edwin\Documents\projet annuel\css\Projet_SEcont.css">
     
-    <!-- des icônes  -->  
+    <!-- des icones  -->  
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
@@ -18,13 +18,13 @@
             <nav>
                 <ul>
                     <li><a href="C:\Users\Edwin\Documents\projet annuel\css\P_Acceuil.php">Accueil</a></li>
-                    <!-- Ajoutez d'autres liens de navigation si nécessaire -->
+                    <!-- Ajoutez d'autres liens de navigation si necessaire -->
                 </ul>
             </nav>
         </div>
 
         <div class="contact-message">
-            <p>Nous serions ravis d'avoir de vos nouvelles ! Que ce soit pour des questions, des commentaires ou simplement pour dire bonjour, n'hésitez pas à nous contacter en utilisant l'un des moyens ci-dessous :</p>
+            <p>Nous serions ravis d'avoir de vos nouvelles ! Que ce soit pour des questions, des commentaires ou simplement pour dire bonjour, n'hesitez pas a nous contacter en utilisant l'un des moyens ci-dessous :</p>
         </div>
 
         <div class="contact-info">

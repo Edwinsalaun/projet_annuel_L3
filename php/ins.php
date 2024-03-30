@@ -36,4 +36,3 @@ if(isset($_POST['nom']) && isset($_POST['prenom'])) {
     }
     $requete->closeCursor();
 }
-?>

@@ -86,7 +86,7 @@ button {
 
         <button type="submit">CONNEXION</button>
       </form>
-      <p>Pas encore de compte ? <a href="C:\Users\Edwin\Documents\projet annuel\css\Projet_SE1.php">Créer un compte</a></p>
+      <p>Pas encore de compte ? <a href="C:\Users\Edwin\Documents\projet annuel\css\Projet_SE1.php">Creer un compte</a></p>
     </div>
   </section>
 

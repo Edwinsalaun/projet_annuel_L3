@@ -10,7 +10,7 @@
   color: #fff;
   padding: 10px 20px;
   display: flex;
-  justify-content: space-between; /* Aligner les éléments horizontalement */
+  justify-content: space-between; /* Aligner les elements horizontalement */
   align-items: center;
 }
 
@@ -39,7 +39,7 @@
 }/* la couleur de different element en lien acceuil etc  */
 
 .navbar nav ul li a:hover {
-  color: #ccc; /* Changer la couleur au survol selon vos préférences */
+  color: #ccc; /* Changer la couleur au survol selon vos preferences */
 }
 
 h2 {
@@ -52,7 +52,7 @@ h2 {
   border-radius: 100px;
   padding: 20px;
   margin-right: 20px;
-  width: calc((100% - 40px) / 3); /* Répartir en 3 colonnes avec marges */
+  width: calc((100% - 40px) / 3); /* Repartir en 3 colonnes avec marges */
   display: inline-block;
   vertical-align: top;
 }
@@ -67,22 +67,22 @@ h2 {
 .rectangle {
   background-color: #f2f2f2;
   border: 1px solid #ddd;
-  border-radius: 10px; /* Ajuster le rayon de la bordure selon vos préférences */
+  border-radius: 10px; /* Ajuster le rayon de la bordure selon vos preferences */
   padding: 20px;
   margin-right: 20px;
   margin-bottom: 20px; /* Espacement entre les rectangles */
-  width: calc((100% - 40px - 40px) / 3); /* Répartir en 3 colonnes avec marges */
+  width: calc((100% - 40px - 40px) / 3); /* Repartir en 3 colonnes avec marges */
   display: inline-block;
   vertical-align: top;
 }
 
 .rectangle:last-child {
-  margin-right: 0; /* Aucun espacement à droite pour le dernier rectangle */
+  margin-right: 0; /* Aucun espacement a droite pour le dernier rectangle */
 }
 .navbar nav ul li a {
     color: #fff; /* Couleur des liens en blanc */
     text-decoration: none;
-	  padding: 10px 20px; /* Espacement intérieur */
+	  padding: 10px 20px; /* Espacement interieur */
  
 }
 
@@ -141,15 +141,15 @@ body {body, html {
       <ul>
         <li><a href="#">Accueil</a></li>
         <li><a href="C:\Users\Edwin\Documents\projet annuel\css\Projet_SE.php">Mon Compte </a></li>
-		<li><a href="C:\Users\Edwin\Documents\projet annuel\css\Projet_SEACTU.php">Actualités </a></li>
+		<li><a href="C:\Users\Edwin\Documents\projet annuel\css\Projet_SEACTU.php">Actualites </a></li>
         <li><a href="C:\Users\Edwin\Documents\projet annuel\css\Projet_SEcont.php">Contact</a></li>
       </ul>
     </nav>    
   </header>
   <div class="container">
     <h2>Un Acceuil Chaleureux 
-	Ce qui est bien commencé est a moitié fait . Etes-vous pret(e) a faire du fitness votre essentiel ? 
-	Consultez  cette pages de conseils et d'astuces pour vous préparer a entamer votre aventure de ftness en toutes 
+	Ce qui est bien commence est a moitie fait . Etes-vous pret(e) a faire du fitness votre essentiel ? 
+	Consultez  cette pages de conseils et d'astuces pour vous preparer a entamer votre aventure de ftness en toutes 
 	coniance.</h2>
     <div class="rectangle">
       <h2>Profil</h2>
@@ -158,8 +158,8 @@ body {body, html {
 	  	  </p>
     </div>
     <div class="rectangle">
-      <h2>Plan d'entraînement</h2>
-      <p><li><a href="">Description du Plan d'entraînement </a></li>
+      <h2>Plan d'entrainement</h2>
+      <p><li><a href="">Description du Plan d'entrainement </a></li>
 	   - Consomer 20 %
       - EXERCICE 20 %
       - RESTANTE 60 %</p>

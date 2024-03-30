@@ -62,7 +62,7 @@ input[type="submit"]:hover {
     <h2>Inscription - Fitness Life Classic</h2>
 
     <form action="ins.php" method="post">
-        <label for="prenom">Prénom:</label>
+        <label for="prenom">Prenom:</label>
         <input type="text" id="prenom" name="prenom" required><br>
 
         <label for="nom">Nom:</label>
@@ -75,9 +75,9 @@ input[type="submit"]:hover {
             <option value="autres">Autres</option>
         </select><br>
 
-        <label for="sport">Sport pratiqué:</label>
+        <label for="sport">Sport pratique:</label>
         <select id="sport" name="sport" required>
-            <option value="course">Course à pied</option>
+            <option value="course">Course a pied</option>
             <option value="natation">Natation</option>
             <option value="musculation">Musculation</option>
         </select><br>

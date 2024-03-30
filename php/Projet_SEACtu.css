@@ -1,4 +1,4 @@
-/* Réinitialisation des styles de base */
+/* Reinitialisation des styles de base */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -16,7 +16,7 @@ body {
 
 h1 {
     text-align: center;
-    color: #fff; /* Texte "Actualités" en blanc */
+    color: #fff; /* Texte "Actualites" en blanc */
 }
 
 .navbar {
@@ -30,7 +30,7 @@ h1 {
 .navbar nav ul li a {
     color: #fff; /* Couleur des liens en blanc */
     text-decoration: none;
-	  padding: 10px 20px; /* Espacement intérieur */
+	  padding: 10px 20px; /* Espacement interieur */
  
 }
 
@@ -69,7 +69,7 @@ h1 {
 .navbar nav ul li a[href*="Accueil"] {
     color: #fff; /* Couleur du texte en blanc */
     background-color: #333; /* Couleur de fond */
-    padding: 10px 20px; /* Espacement intérieur */
+    padding: 10px 20px; /* Espacement interieur */
     border-radius: 5px; /* Bordure arrondie */
     text-decoration: none; /* Suppression du soulignement */
     transition: background-color 0.3s, color 0.3s; /* Transition fluide */

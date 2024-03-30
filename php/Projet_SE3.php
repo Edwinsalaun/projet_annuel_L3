@@ -11,7 +11,7 @@
     <h2>Inscription - Fitness Life Pro</h2>
 
     <form action="systeme_payement.php" method="post" enctype="multipart/form-data">
-        <label for="prenom">Prénom:</label>
+        <label for="prenom">Prenom:</label>
         <input type="text" id="prenom" name="prenom" required><br>
 
         <label for="nom">Nom:</label>
@@ -26,9 +26,9 @@
 
         <!-- Autres champs du formulaire (adresse mail, mot de passe, etc.) -->
 
-        <label for="sport">Sport pratiqué:</label>
+        <label for="sport">Sport pratique:</label>
         <select id="sport" name="sport" required>
-            <option value="course">Course à pied</option>
+            <option value="course">Course a pied</option>
             <option value="natation">Natation</option>
             <option value="musculation">Musculation</option>
         </select><br>
@@ -56,7 +56,7 @@
 
         
 
-        <!-- Ajoutez d'autres champs nécessaires pour les fonctionnalités demandées -->
+        <!-- Ajoutez d'autres champs necessaires pour les fonctionnalites demandees -->
 
         <input type="submit" value="S'inscrire">
     </form>

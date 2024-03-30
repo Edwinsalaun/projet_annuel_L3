@@ -1,35 +1,34 @@
 <?php
 
-
 include "connexion.php";
 session_start();
-if(isset($_POST['nom']) && isset($_POST['prenom'])) {
+
+if(isset($_POST['nom']) && isset($_POST['prenom']) && isset($_POST['ADRESSE_EMAIL']) && isset($_POST['MOT_DE_PASSE']) && isset($_POST['abonnement']) && isset($_POST['sport'])) {
     $nom = $_POST['nom'];
     $genre = $_POST['genre'];
     $prenom = $_POST['prenom'];
-    $sport_pratique = $_POST['sport'];
+    $sport_pratique = $_POST['sport']; // Remplacer par l'id du sport sélectionné
     $Taille = $_POST['Taille'];
     $Poids = $_POST['Poids'];
-    $abonnement = $_POST['abonnement'];
+    $abonnement = $_POST['abonnement']; // Remplacer par l'id de l'abonnement sélectionné
     $ADRESSE_EMAIL = $_POST['ADRESSE_EMAIL'];
-    $MOT_DE_PASSE = $_POST['MOT_DE_PASSE'];
+    $MOT_DE_PASSE = password_hash($_POST['MOT_DE_PASSE'], PASSWORD_DEFAULT); // Hachage du mot de passe
     $photo = $_POST['photo'];
+    $banni = 0;
 
-    try {
-        
-        $requete = $pdo->prepare('INSERT INTO `utilisateur_pro` (`nom`, `genre`, `prenom`, `sport_pratique`, `Taille`, `Poids`,`abonnement`, `email`, `MOT_DE_PASSE`, `photo`) VALUES (:nom, :genre, :prenom, :sport_pratique,  :Taille, :Poids,:abonnement, :email, :MOT_DE_PASSE,:photo)');
+    try {   
+        $requete = $pdo->prepare('INSERT INTO `users`(`email`, `Mot_de_passe`, `nom`, `prenom`, `abonnement`, `sport_pratique`, `Taille`, `Poids`, `genre`, `photo`, `banni`) VALUES (:email, :MOT_DE_PASSE,:nom,:prenom,:abonnement,:sport_pratique,:Taille,:Poids,:genre,:photo,:banni)'); // Correction de la virgule en trop
         $requete->bindParam(':nom', $nom);
         $requete->bindParam(':genre', $genre);
         $requete->bindParam(':prenom', $prenom);
         $requete->bindParam(':sport_pratique', $sport_pratique);
-
         $requete->bindParam(':Taille', $Taille);
         $requete->bindParam(':Poids', $Poids);
         $requete->bindParam(':abonnement', $abonnement);
         $requete->bindParam(':email', $ADRESSE_EMAIL);
         $requete->bindParam(':MOT_DE_PASSE', $MOT_DE_PASSE);
         $requete->bindParam(':photo', $photo);
-
+        $requete->bindParam(':banni', $banni);
 
         $requete->execute();
         if($requete) {
@@ -41,4 +40,3 @@ if(isset($_POST['nom']) && isset($_POST['prenom'])) {
     }
     $requete->closeCursor();
 }
-?>

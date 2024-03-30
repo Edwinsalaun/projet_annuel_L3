@@ -1,4 +1,4 @@
-/* Réinitialisation des styles de base */
+/* Reinitialisation des styles de base */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -65,18 +65,18 @@ h1 {
     color: #666;
 }
 
-/* Ajout d'icônes pour les réseaux sociaux */
+/* Ajout d'icones pour les reseaux sociaux */
 .contact-info a i {
-    margin-right: 5px; /* Espace entre l'icône et le texte du lien */
-    color: #3b5998; /* Couleur de l'icône Facebook */
+    margin-right: 5px; /* Espace entre l'icone et le texte du lien */
+    color: #3b5998; /* Couleur de l'icone Facebook */
 }
 
 .contact-info a i.fa-twitter {
-    color: #1da1f2; /* Couleur de l'icône Twitter */
+    color: #1da1f2; /* Couleur de l'icone Twitter */
 }
 
 .contact-info a i.fa-instagram {
-    color: #c13584; /* Couleur de l'icône Instagram */
+    color: #c13584; /* Couleur de l'icone Instagram */
 }
 
 

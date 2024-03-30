@@ -65,13 +65,13 @@ p {
 <body>
 
   <header>
-    <h1>Bienvenue à vous !</h1>
+    <h1>Bienvenue a vous !</h1>
   </header>
 
   <section>
     <div class="subscription-section">
       <h2>Choisir votre abonnement</h2>
-      <p>Mettez à niveau votre compte !</p>
+      <p>Mettez a niveau votre compte !</p>
 
       <div class="subscription-options">
         <a href="Projet_SE3.php">
